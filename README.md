@@ -43,6 +43,6 @@
 ---
 
 ## 🔧 Installation (Linux)
-
+## 💡 Example Questions (in Spanish)
 
 
