@@ -1,6 +1,6 @@
 # ☕ Caficulbot: Offline AI Assistant for Coffee Farmers
 
-**Caficulbot** is a fully offline, multimodal AI assistant built to empower Colombian coffee farmers with expert knowledge on cultivation, pests, diseases, and farm management. It provides real-time answers to questions, processes images of plant diseases, and performs administrative tasks — all without needing an internet connection.
+**Caficulbot** is a fully offline, multimodal AI assistant built to empower Colombian coffee farmers with expert knowledge on cultivation, pests, diseases, and farm management. It provides real-time answers to questions, processes images of plant diseases, and performs administrative tasks, all without needing an internet connection.
 
 > 🌐 Online demo: [http://52.205.44.176:8501/](http://52.205.44.176:8501/)
 
