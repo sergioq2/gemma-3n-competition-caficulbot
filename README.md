@@ -41,7 +41,17 @@
 │   └── gemma3n_finetuning_coffeagent.ipynb
 '''
 ```
+# Local setup
 
+## 🖥️ System Requirements
+
+- **OS**: Linux (Ubuntu 20.04+ recommended)
+- **Python**: 3.10+
+- **GPU**: NVIDIA GPU with at least **8GB VRAM**
+- ✅ Tested on: **NVIDIA RTX 4060 (8GB VRAM)**
+- **CUDA**: Compatible with `torch` and `transformers` (CUDA 12.1+ suggested)
+
+- 
 ## 🔧 Installation (Linux)
 
 ### **1. Clone the repository**
