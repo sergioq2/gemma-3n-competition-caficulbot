@@ -41,34 +41,36 @@
 │   └── gemma3n_finetuning_coffeagent.ipynb
 
 ---
-
 ## 🔧 Installation (Linux)
 
-### 1. Clone the repository
+### **1. Clone the repository**
 
 ```bash
 git clone https://github.com/your-username/caficulbot.git
 cd caficulbot
-
-### 2. Set up a Python virtual environment
-```bash
+2. Set up a Python virtual environment
+bash
+Copy
+Edit
 python3 -m venv venv
 source venv/bin/activate
-
-### 3. Install dependencies
-```bash
+3. Install dependencies
+bash
+Copy
+Edit
 pip install --upgrade pip
 pip install -r requirements.txt
-
-### 4- Download the model
-```bash
+4. Download the model
+bash
+Copy
+Edit
 python download.py
-
-### 5. Launch the full application
-```bash
+5. Launch the full application
+bash
+Copy
+Edit
 chmod +x app/run-local.sh
 ./app/run-local.sh
-
 This will start the following services:
 
 api.py → http://localhost:8000
@@ -83,6 +85,4 @@ Income service → http://localhost:8004
 
 Frontend (Streamlit) → http://localhost:8501
 
-**Launch the Desktop App**
-```bash
-python app/main.py
+
