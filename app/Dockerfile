@@ -1,28 +1,19 @@
-# Dockerfile multi-stage para el proyecto CaficulBot
-
-# Usar imagen base con CUDA support
 FROM nvidia/cuda:12.6.0-runtime-ubuntu22.04 as base
 
-# Instalar Python 3.10
 RUN apt-get update && apt-get install -y \
     python3.10 \
     python3.10-dev \
     python3-pip \
     && rm -rf /var/lib/apt/lists/*
 
-# Crear enlace simbólico para python
 RUN ln -s /usr/bin/python3.10 /usr/bin/python
 
-# Establecer directorio de trabajo
 WORKDIR /app
 
-# Actualizar pip
 RUN pip install --upgrade pip
 
-# Copiar requirements
 COPY requirements.txt .
 
-# Instalar dependencias del sistema necesarias
 RUN apt-get update && apt-get install -y \
     gcc \
     g++ \
@@ -30,23 +21,18 @@ RUN apt-get update && apt-get install -y \
     ffmpeg \
     && rm -rf /var/lib/apt/lists/*
 
-# Instalar PyTorch con soporte CUDA primero
 RUN pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
 
-# Instalar el resto de dependencias de Python
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copiar todo el código de la aplicación
 COPY . .
 
-# Crear directorios necesarios
 RUN mkdir -p /app/models \
     && mkdir -p /app/databases/cosecha \
     && mkdir -p /app/databases/gastos \
     && mkdir -p /app/databases/ingresos \
     && mkdir -p /app/databases/inventario
 
-# Exponer todos los puertos necesarios
 EXPOSE 8000 8001 8002 8003 8004 8501
 
 # Script de inicio por defecto (puede ser sobrescrito)
