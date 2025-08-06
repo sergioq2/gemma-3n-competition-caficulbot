@@ -124,3 +124,17 @@ Upload an image and ask: ¿Qué enfermedad tiene?
 The app is also deployed to a remote EC2 instance (for demo purposes):
 http://52.205.44.176:8501/
 Note: Local offline deployment is the intended usage.
+
+
+📝 **License & Contact**
+Author: Sergio Quintero.
+Contact: sergio.quintero.1804@gmail.com
+LinkedIn: www.linkedin.com/in/sergio-quintero-ramirez
+License: MIT
+
+🙌 **Acknowledgements**
+CENICAFE for public technical coffee research
+Google DeepMind for the competition and gemma-3n model
+Hugging Face & Unsloth for LLM infrastructure
+
+Colombian coffee farmers — this tool is for you 🇨🇴
