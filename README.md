@@ -49,25 +49,17 @@
 ```bash
 git clone https://github.com/your-username/caficulbot.git
 cd caficulbot
+```
 
-### **2.Set up a Python virtual environment**
-```bash
-python3 -m venv venv
-source venv/bin/activate
-
-### **3.Install dependencies**
-```bash
-pip install --upgrade pip
-pip install -r requirements.txt
-
-### **4.Download the model**
-```bash
-python download.py
-
-### **5.Launch the full application**
+### **2.Make sure the script is executable**
 ```bash
 chmod +x app/run-local.sh
+```
+
+### **3.Run the app**
+```bash
 ./app/run-local.sh
+```
 
 This will start the following services:
 
@@ -84,9 +76,11 @@ Income service → http://localhost:8004
 Frontend (Streamlit) → http://localhost:8501
 
 **Launch the Desktop App**
-```bash
 To run the GUI-based version using tkinter:
+```bash
 python app/main.py
+```
+
 
 **Models and Datasets**
 | Resource                 | Link                                                                                                      |
@@ -96,35 +90,27 @@ python app/main.py
 | Function Calling Dataset | [sergioq2/functioncalling\_coffedata](https://huggingface.co/datasets/sergioq2/functioncalling_coffedata) |
 | Image Dataset (Roboflow) | [Coffee Pests and Diseases](https://app.roboflow.com/detection-3nbwx/coffe-mw9n0/2/export)                |
 
+
+
 **Optional: Dataset Generation & Fine-Tuning**
 These notebooks are optional and used only to replicate dataset generation or model training:
-
 dataset/qa_generation.ipynb → Builds QA pairs from CENICAFE documents
-
 dataset/function_calling.ipynb → Builds function-calling samples
-
 fine_tuning/gemma3n_finetuning_coffeagent.ipynb → Fine-tunes Gemma-3N using Unsloth
-
 To use OpenAI APIs, create a .env file with your API key.
 
+
 **Test the Application**
-
 Once services are running:
-
 Open the browser at:
 http://localhost:8501
 
 Try asking:
-
 ¿Cómo controlar la roya?
-
 ¿Cómo debe ser el secado en el café?
-
 Upload an image and ask: ¿Qué enfermedad tiene?
 
 **Remote Demo (Online Version)**
 The app is also deployed to a remote EC2 instance (for demo purposes):
-
 http://52.205.44.176:8501/
-
 Note: Local offline deployment is the intended usage.
