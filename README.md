@@ -92,7 +92,7 @@ python app/main.py
 ```
 
 
-📘 ##Fine-Tuning Notebook Overview
+## 📘 Fine-Tuning Notebook Overview
 To adapt the multimodal Gemma-3n-E2B model to the specific context of Colombian coffee farming, a dedicated fine-tuning notebook was developed. This notebook orchestrates the training pipeline across three stages:
 
 ### Model Initialization
@@ -102,9 +102,7 @@ Loads the 6B parameter gemma-3n-E2B (Instruct) model with support for text, imag
 Integrates three custom datasets:
 
 Over 1,000 technical documents from Cenicafé for question–answer fine-tuning.
-
 2,616 labeled images of coffee pests and diseases for vision-layer adaptation.
-
 2,700 instruction-function pairs to enable structured function calling.
 
 ### Training Execution
