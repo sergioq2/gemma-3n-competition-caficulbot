@@ -2,3 +2,7 @@
 models/
 env/
 dataset/.env
+app/build
+app/dist
+app/logs
+app/venv
